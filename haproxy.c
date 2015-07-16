@@ -26,11 +26,10 @@
 #include <sys/un.h>
 #include <poll.h>
 
-#include "collectd.h"
-#include "common.h"
-#include "plugin.h"
-#include "configfile.h"
-
+#include <collectd/core/collectd.h>
+#include <collectd/core/common.h>
+#include <collectd/core/plugin.h>
+#include <collectd/core/configfile.h>
 
 #define HAP_SOCKETPATH "/var/run/haproxy-stats.sock"
 #define HAP_SHOW_STAT "show stat\n"
